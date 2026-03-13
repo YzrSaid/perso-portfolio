@@ -96,9 +96,9 @@ const AchievementsCard = () => {
               >
                 <div className="flex items-start w-full">
                   <div className="flex-1 pr-6">
-                    <span className="text-sm font-medium leading-snug text-foreground/80 group-hover:text-foreground block">
+                    <h3 className="font-bold text-sm text-foreground group-hover:text-foreground block">
                       {cert.name}
-                    </span>
+                    </h3>
                     <span className="text-xs text-muted-foreground block mt-0.5">
                       {cert.org}
                     </span>

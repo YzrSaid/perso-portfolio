@@ -1,10 +1,11 @@
-import { FaHtml5, FaCss3, FaGitAlt, FaGithub } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaGitAlt, FaGithub, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
   SiTailwindcss,
-  SiNextdotjs,
   SiUnity,
   SiFirebase,
+  SiSupabase,
+  SiVercel,
 } from "react-icons/si";
 import { Code2 } from "lucide-react";
 import { FaFlutter } from "react-icons/fa6";
@@ -13,7 +14,7 @@ const technologies = [
   {
     icon: SiUnity,
     name: "Unity",
-    color: "text-black-400",
+    color: "text-foreground",
     bg: "border-gray-300",
   },
   {
@@ -23,8 +24,8 @@ const technologies = [
     bg: "border-gray-300",
   },
   {
-    icon: SiNextdotjs,
-    name: "Next.js",
+    icon: FaReact,
+    name: "React.js",
     color: "text-black-400",
     bg: "border-gray-300",
   },
@@ -41,9 +42,21 @@ const technologies = [
     bg: "border-gray-300",
   },
   {
+    icon: SiSupabase,
+    name: "Supabase",
+    color: "text-black-400",
+    bg: "border-gray-300",
+  },
+  {
     icon: SiTailwindcss,
     name: "Tailwind",
     color: "text-black-400",
+    bg: "border-gray-300",
+  },
+  {
+    icon: SiVercel,
+    name: "Vercel",
+    color: "text-foreground",
     bg: "border-gray-300",
   },
   {
@@ -87,7 +100,7 @@ const TechStack = () => {
         </h2>
       </div>
 
-      <div className="flex flex-wrap gap-5">
+      <div className="flex flex-wrap gap-3">
         {technologies.map((tech, index) => (
           <div
             key={index}

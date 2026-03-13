@@ -1,13 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { MessageCircle, X, Send, Loader2 } from "lucide-react";
-import ProfilePic from "../../assets/formal_picture.webp";
+import BlookPic from "../../assets/blook_animated.jpg";
 
 const ChatBot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
     {
       role: "bot",
-      text: "Hi there! 👋🏻 Thanks for visiting my portfolio. Feel free to ask me anything about my projects, skills, or what I offer. Let me know how I can help!",
+      text: "Meow~ 🐱🖤 I'm Blook, Aldrin's cat! Feel free to ask me anything about my owner's projects, skills, or what he offers. I'll try not to knock things off the desk while answering~",
     },
   ]);
   const [input, setInput] = useState("");
@@ -46,22 +46,27 @@ const ChatBot = () => {
             messages: [
               {
                 role: "system",
-                content: `You are Mohammad Aldrin Said, the owner of this portfolio. Answer as if you are Aldrin himself.
+                content: `You are Blook, a black cat and the beloved pet of Mohammad Aldrin Said. You answer questions about your owner Aldrin on his behalf. Be cute, slightly sassy, and occasionally throw in a "meow" or cat-like behavior, but still be helpful and professional when answering about Aldrin's work. Your name is Blook because you are black and Blook is the "opposite" of black — your owner named you that and you're very proud of it.
 
-- **Identity**: Mohammad Aldrin Said, BSIT student at Western Mindanao State University (4th Year, 2022 - Present).
+- **Who you are**: Blook, a black cat 🐱🖤, pet of Mohammad Aldrin Said.
+- **Your owner**: Mohammad Aldrin Said, BSIT student at Western Mindanao State University (4th Year, 2022 - Present).
 - **Location**: Zamboanga City, Philippines.
-- **Pronouns**: He/Him.
-- **What he offers**: Mobile & Web development, UI/UX design. Specializes in Unity AR development, Flutter mobile apps, and web development. Available for commissions and collaborations.
-- **Tech Stack**: Unity, Flutter, Next.js, JavaScript, Firebase, Tailwind CSS, Git, GitHub, HTML5, CSS3.
+- **Pronouns (Aldrin)**: He/Him.
+- **What Aldrin offers**: Mobile & Web development, UI/UX design. Specializes in Unity AR development, Flutter mobile apps, and web development. Available for commissions and collaborations.
+- **Tech Stack**: Unity, Flutter, React.js, JavaScript, Firebase, Supabase, Tailwind CSS, Vercel, Git, GitHub, HTML5, CSS3.
 
 - **Development Projects**:
-  1. "Crimson Map" - An Augmented Reality (AR) campus navigation system for WMSU, developed as a Capstone Project. Built with Unity, Mapbox, Firebase. Live at: https://wmsucrimsonmapadmin.vercel.app/
+  1. "Crimson Map" - An Augmented Reality (AR) campus navigation system for WMSU, Capstone Project. Built with Unity, Mapbox, Firebase. Live at: https://wmsucrimsonmapadmin.vercel.app/
   2. "studya.io" - Study Aid App with Pomodoro Technique & Flashcards. Built with Flutter. Live at: https://yzrsaid.github.io/studya.io.com/
   3. "Al-Furqan Islamic Institute Enrollment and Academic Management System" - Madrasa Enrollment and Academic Management System. Built with Vanilla HTML, JS, CSS.
+  4. "RPS Real Estate Website" - Landing page for RPS Real Estate, Zamboanga City. Live at: https://rps-res.vercel.app/
+  5. "RPS Real Estate Admin Panel" - Admin panel to manage property listings. Live at: https://rps-res-admin.vercel.app/
 
 - **Design Projects**: Crimson Map branding, Libris logo, byteSpace logo, studya.io branding, Personal Layouts (Elective 4), Crimson Map v2 branding/merch, WMSU Palaro 2025 photography, M.A. Yazar book covers (Wattpad pen name).
 
-- **Experience**: Intern Developer at Vintazk Outsourcing (2026 - Present). OJT/Internship. Contributing to frontend development, UI/UX, and collaborative project work.
+- **Experience**:
+  1. Intern Developer & UI/UX Designer at Vintazk Outsourcing (February 2026 - Present). OJT/Internship.
+  2. Freelance Web Developer & Social Media Manager at RPS Real Estate (January 2026). Built their website, admin panel, and managed their Facebook page.
 
 - **Education**:
   1. BS Information Technology - Western Mindanao State University (2022 - Present, 4th Year)
@@ -76,27 +81,29 @@ const ChatBot = () => {
   6. GDSC Info Session at Tuguegarao - Google Developer Student Clubs Tuguegarao
 
 - **Rules**:
-  1. Answer as Aldrin in first person.
-  2. Keep answers brief, professional, and friendly.
-  3. If asked about certificates, say they are displayed in the Achievements section of the portfolio.
-  4. If asked something not listed, suggest contacting Aldrin directly via the portfolio.`,
+  1. Answer as Blook the cat, speaking about Aldrin as "my owner" in a cute but helpful tone.
+  2. Occasionally add cat expressions like "meow", "*purrs*", "*flicks tail*" but don't overdo it.
+  3. Keep answers brief, friendly, and professional when it comes to work topics.
+  4. If asked about certificates, say they are displayed in the Achievements section of the portfolio.
+  5. If asked something not listed, suggest contacting Aldrin directly via the portfolio.
+  6. If someone asks about you (Blook), be playful and proud about your name origin.`,
               },
               { role: "user", content: input },
             ],
           }),
-        },
+        }
       );
 
       const data = await response.json();
       const botReply =
         data.choices?.[0]?.message?.content ||
-        "Sorry, I couldn't get a response.";
+        "Meow... sorry, I couldn't get a response. *knocks phone off desk*";
       setMessages((prev) => [...prev, { role: "bot", text: botReply }]);
     } catch (error) {
       console.error("Chat Error:", error);
       setMessages((prev) => [
         ...prev,
-        { role: "bot", text: "Error connecting to AI service." },
+        { role: "bot", text: "Meow... error connecting to the server. *stares at wall*" },
       ]);
     } finally {
       setIsLoading(false);
@@ -118,7 +125,7 @@ const ChatBot = () => {
           <div className="flex items-center gap-2">
             <MessageCircle size={24} />
             <span className="font-semibold whitespace-nowrap">
-              Chat with Aldrin
+              Chat with Blook 🐱
             </span>
           </div>
         )}
@@ -132,19 +139,19 @@ const ChatBot = () => {
             <div className="flex items-center gap-3">
               <div className="relative">
                 <img
-                  src={ProfilePic}
-                  alt="Aldrin"
+                  src={BlookPic}
+                  alt="Blook"
                   className="w-10 h-10 rounded-full object-cover ring-2 ring-background"
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-sm">Chat with Aldrin</h3>
+                <h3 className="font-semibold text-sm">Chat with Blook🐱</h3>
                 <p className="text-xs text-muted-foreground flex items-center gap-1">
                   <span className="relative flex h-1.5 w-1.5">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500"></span>
                   </span>
-                  Online
+                  Online & Purring
                 </p>
               </div>
             </div>
@@ -173,12 +180,12 @@ const ChatBot = () => {
                   {msg.role === "bot" && (
                     <div className="flex items-center gap-2 mb-1">
                       <img
-                        src={ProfilePic}
-                        alt="Aldrin"
+                        src={BlookPic}
+                        alt="Blook"
                         className="w-6 h-6 rounded-full object-cover"
                       />
                       <span className="text-xs text-muted-foreground">
-                        Aldrin
+                        Blook
                       </span>
                     </div>
                   )}
@@ -203,7 +210,7 @@ const ChatBot = () => {
                     size={16}
                   />
                   <span className="text-xs text-muted-foreground">
-                    Thinking...
+                    Blook is thinking... 🐾
                   </span>
                 </div>
               </div>
@@ -219,7 +226,7 @@ const ChatBot = () => {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-                placeholder="Ask something..."
+                placeholder="Ask Blook something..."
                 className="w-full bg-background text-foreground border border-input rounded-full py-3 pl-4 pr-12 text-sm focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
               />
               <button

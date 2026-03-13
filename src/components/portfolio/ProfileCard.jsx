@@ -274,7 +274,7 @@ const ProfileCard = () => {
           {/* SOCIALS SECTION */}
           <div className="mt-8 w-full">
             <p className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4 opacity-70">
-              Socials
+              Let's Connect
             </p>
 
             {/* WakaTime Badge */}

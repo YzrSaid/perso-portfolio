@@ -8,6 +8,7 @@ import ExperienceCard from "../components/portfolio/ExperienceCard";
 import AchievementsCard from "../components/portfolio/AchievementsCard";
 import ChatBot from "../components/portfolio/ChatBot";
 import { ThemeToggle } from "../components/ui/ThemeToggle";
+import ParticleBackground from "../components/ParticleBackground";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -29,12 +30,14 @@ const itemVariants = {
 const Index = () => {
   return (
     <div className="min-h-screen p-4 md:p-8 relative overflow-x-hidden">
+      <ParticleBackground /> 
+
       <div className="fixed top-6 right-6 z-50">
         <ThemeToggle />
       </div>
 
       <motion.div
-        className="container max-w-7xl mx-auto pb-20"
+        className="container max-w-7xl mx-auto pb-20 relative z-10"  
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -64,7 +67,7 @@ const Index = () => {
             <ProjectsCard />
           </motion.div>
 
-          {/* RIGHT SIDEBAR - Exp + Education only */}
+          {/* RIGHT SIDEBAR */}
           <motion.div
             variants={itemVariants}
             className="lg:col-start-4 lg:col-end-5 lg:row-start-2 lg:row-end-4 flex flex-col gap-6"
@@ -73,7 +76,7 @@ const Index = () => {
             <ExperienceCard />
           </motion.div>
 
-          {/* TECH STACK - left side of bottom row */}
+          {/* TECH STACK */}
           <motion.div
             variants={itemVariants}
             className="lg:col-start-1 lg:col-end-3 lg:row-start-3 lg:row-end-4"
@@ -81,7 +84,7 @@ const Index = () => {
             <TechStack />
           </motion.div>
 
-          {/* ACHIEVEMENTS - right side of bottom row */}
+          {/* ACHIEVEMENTS */}
           <motion.div
             variants={itemVariants}
             className="lg:col-start-3 lg:col-end-4 lg:row-start-3 lg:row-end-4"
@@ -91,8 +94,8 @@ const Index = () => {
         </div>
       </motion.div>
 
-      <footer className="text-center text-sm text-muted-foreground pb-8">
-        <p>© 2025 Mohammad Aldrin Said | Mobile & Web Developer.</p>
+      <footer className="relative z-10 text-center text-sm text-muted-foreground pb-8">
+        <p>© 2026 Mohammad Aldrin Said | Mobile & Web Developer.</p>
       </footer>
 
       <ChatBot />
