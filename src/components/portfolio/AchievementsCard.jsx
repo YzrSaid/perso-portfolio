@@ -3,12 +3,12 @@ import { Award, ExternalLink, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 // --- ASSETS ---
-import DICT_EthicalHacking from "../../assets/dict_cert.png";
-import AzureML_Cert from "../../assets/azure_cert.png";
-import Udemy_HtmlCss from "../../assets/udemy_cert.png";
-import GDSC_ML_Kickoff from "../../assets/gdsc_intro_to_ml.png";
-import GDSC_WMSU_Info from "../../assets/gdsc_info_session_wmsu.jpg";
-import GDSC_Tuguegarao_Info from "../../assets/gdsc_info_session_tuguegarao.jpg";
+import DICT_EthicalHacking from "../../assets/dict_cert.webp";
+import AzureML_Cert from "../../assets/azure_cert.webp";
+import Udemy_HtmlCss from "../../assets/udemy_cert.webp";
+import GDSC_ML_Kickoff from "../../assets/gdsc_intro_to_ml.webp";
+import GDSC_WMSU_Info from "../../assets/gdsc_info_session_wmsu.webp";
+import GDSC_Tuguegarao_Info from "../../assets/gdsc_info_session_tuguegarao.webp";
 
 const AchievementsCard = () => {
   const [selectedImage, setSelectedImage] = useState(null);

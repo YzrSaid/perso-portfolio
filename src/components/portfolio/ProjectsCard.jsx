@@ -12,25 +12,25 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 
 // WMSU Palaro images
-import WMSUPalaro_1 from "../../assets/wmsu_palaro/1.jfif";
-import WMSUPalaro_2 from "../../assets/wmsu_palaro/2.jfif";
-import WMSUPalaro_3 from "../../assets/wmsu_palaro/3.jfif";
-import WMSUPalaro_4 from "../../assets/wmsu_palaro/4.jfif";
-import WMSUPalaro_5 from "../../assets/wmsu_palaro/4.jfif";
+import WMSUPalaro_1 from "../../assets/wmsu_palaro/1.webp";
+import WMSUPalaro_2 from "../../assets/wmsu_palaro/2.webp";
+import WMSUPalaro_3 from "../../assets/wmsu_palaro/3.webp";
+import WMSUPalaro_4 from "../../assets/wmsu_palaro/4.webp";
+import WMSUPalaro_5 from "../../assets/wmsu_palaro/4.webp";
 
 // M.A. Yazar images
-import MAYazar_logo from "../../assets/ma_yazar/ma_yazar_logo.png";
-import MAYazar_1 from "../../assets/ma_yazar/ma_yazar_1.jpg";
-import MAYazar_2 from "../../assets/ma_yazar/ma_yazar_2.png";
-import MAYazar_3 from "../../assets/ma_yazar/ma_yazar_3.png";
-import MAYazar_4 from "../../assets/ma_yazar/ma_yazar_4.png";
-import MAYazar_5 from "../../assets/ma_yazar/ma_yazar_5.png";
-import MAYazar_6 from "../../assets/ma_yazar/ma_yazar_6.png";
-import MAYazar_7 from "../../assets/ma_yazar/ma_yazar_7.png";
+import MAYazar_logo from "../../assets/ma_yazar/ma_yazar_logo.webp";
+import MAYazar_1 from "../../assets/ma_yazar/ma_yazar_1.webp";
+import MAYazar_2 from "../../assets/ma_yazar/ma_yazar_2.webp";
+import MAYazar_3 from "../../assets/ma_yazar/ma_yazar_3.webp";
+import MAYazar_4 from "../../assets/ma_yazar/ma_yazar_4.webp";
+import MAYazar_5 from "../../assets/ma_yazar/ma_yazar_5.webp";
+import MAYazar_6 from "../../assets/ma_yazar/ma_yazar_6.webp";
+import MAYazar_7 from "../../assets/ma_yazar/ma_yazar_7.webp";
 
 // byteSpace images
-import ByteSpace_1 from "../../assets/byteSpace/byteSpace_1.jpg";
-import ByteSpace_2 from "../../assets/byteSpace/byteSpace_2.jpg";
+import ByteSpace_1 from "../../assets/byteSpace/byteSpace_1.webp";
+import ByteSpace_2 from "../../assets/byteSpace/byteSpace_2.webp";
 
 // Perso images
 import Perso_1 from "../../assets/perso/perso_layout_1.webp";
@@ -38,37 +38,37 @@ import Perso_2 from "../../assets/perso/perso_layout_2.webp";
 import Perso_3 from "../../assets/perso/perso_layout_3.webp";
 
 // Crimson Map v2 images
-import CrimsonMap_v2_1 from "../../assets/crimson_v2/crimson_v2_business_card.png";
-import CrimsonMap_v2_2 from "../../assets/crimson_v2/crimson_v2_letterhead.png";
-import CrimsonMap_v2_3 from "../../assets/crimson_v2/crimson_v2_merch.png";
+import CrimsonMap_v2_1 from "../../assets/crimson_v2/crimson_v2_business_card.webp";
+import CrimsonMap_v2_2 from "../../assets/crimson_v2/crimson_v2_letterhead.webp";
+import CrimsonMap_v2_3 from "../../assets/crimson_v2/crimson_v2_merch.webp";
 
 // Crimson Map images
-import CrimsonMapLogo_1 from "../../assets/crimson_map/crimson_map_logo.png";
-import CrimsonMapLogo_2 from "../../assets/crimson_map/crimson_map_long.png";
-import CrimsonMapOS_1 from "../../assets/crimson_map/crimson_os_1.png";
-import CrimsonMapOS_2 from "../../assets/crimson_map/crimson_os_2.png";
-import CrimsonMapOS_3 from "../../assets/crimson_map/crimson_os_3.png";
-import CrimsonMapSS_1 from "../../assets/crimson_map/crimson_ss_1.png";
-import CrimsonMapSS_2 from "../../assets/crimson_map/crimson_ss_2.png";
-import CrimsonMapSS_3 from "../../assets/crimson_map/crimson_ss_3.png";
-import CrimsonMapSS_4 from "../../assets/crimson_map/crimson_ss_4.png";
-import CrimsonMapLanding from "../../assets/crimson_map/crimson_landing.png";
-import CrimsonMapWholePage from "../../assets/crimson_map/crimson_web_whole_page.png";
-import CrimsonMapAdmin_1 from "../../assets/crimson_map/crimson_admin_1.png";
-import CrimsonMapAdmin_2 from "../../assets/crimson_map/crimson_admin_2.png";
+import CrimsonMapLogo_1 from "../../assets/crimson_map/crimson_map_logo.webp";
+import CrimsonMapLogo_2 from "../../assets/crimson_map/crimson_map_long.webp";
+import CrimsonMapOS_1 from "../../assets/crimson_map/crimson_os_1.webp";
+import CrimsonMapOS_2 from "../../assets/crimson_map/crimson_os_2.webp";
+import CrimsonMapOS_3 from "../../assets/crimson_map/crimson_os_3.webp";
+import CrimsonMapSS_1 from "../../assets/crimson_map/crimson_ss_1.webp";
+import CrimsonMapSS_2 from "../../assets/crimson_map/crimson_ss_2.webp";
+import CrimsonMapSS_3 from "../../assets/crimson_map/crimson_ss_3.webp";
+import CrimsonMapSS_4 from "../../assets/crimson_map/crimson_ss_4.webp";
+import CrimsonMapLanding from "../../assets/crimson_map/crimson_landing.webp";
+import CrimsonMapWholePage from "../../assets/crimson_map/crimson_web_whole_page.webp";
+import CrimsonMapAdmin_1 from "../../assets/crimson_map/crimson_admin_1.webp";
+import CrimsonMapAdmin_2 from "../../assets/crimson_map/crimson_admin_2.webp";
 
 // Libris images
-import LibrisLogo1 from "../../assets/libris/libris_logo.png";
-import LibrisLogo2 from "../../assets/libris/libris_long.png";
+import LibrisLogo1 from "../../assets/libris/libris_logo.webp";
+import LibrisLogo2 from "../../assets/libris/libris_long.webp";
 
 // Studya images
-import StudyaLogo from "../../assets/studya/studya_io_logo.png";
-import StudyaSS_1 from "../../assets/studya/studya_ss_1.png";
-import StudyaSS_2 from "../../assets/studya/studya_ss_2.png";
-import StudyaSS_3 from "../../assets/studya/studya_ss_3.png";
-import StudyaSS_4 from "../../assets/studya/studya_ss_4.png";
-import StudyaWholePage from "../../assets/studya/studya_whole_page.png";
-import StudyaLanding from "../../assets/studya/studya_landing_1.png";
+import StudyaLogo from "../../assets/studya/studya_io_logo.webp";
+import StudyaSS_1 from "../../assets/studya/studya_ss_1.webp";
+import StudyaSS_2 from "../../assets/studya/studya_ss_2.webp";
+import StudyaSS_3 from "../../assets/studya/studya_ss_3.webp";
+import StudyaSS_4 from "../../assets/studya/studya_ss_4.webp";
+import StudyaWholePage from "../../assets/studya/studya_whole_page.webp";
+import StudyaLanding from "../../assets/studya/studya_landing_1.webp";
 
 const devProjects = [
   {

@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { MessageCircle, X, Send, Loader2 } from "lucide-react";
-import BlookPic from "../../assets/blook_animated.jpg";
+import BlookPic from "../../assets/blook_animated.webp";
 
 const ChatBot = () => {
   const [isOpen, setIsOpen] = useState(false);
