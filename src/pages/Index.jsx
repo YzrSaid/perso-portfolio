@@ -32,12 +32,12 @@ const Index = () => {
     <div className="min-h-screen p-4 md:p-8 relative overflow-x-hidden">
       <ParticleBackground /> 
 
-      <div className="fixed top-6 right-6 z-50">
+      <div className="fixed top-6 right-6 z-30">
         <ThemeToggle />
       </div>
 
       <motion.div
-        className="container max-w-7xl mx-auto pb-20 relative z-10"  
+        className="container max-w-7xl mx-auto pb-20 relative"  
         variants={containerVariants}
         initial="hidden"
         animate="visible"

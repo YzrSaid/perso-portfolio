@@ -295,43 +295,47 @@ const ImageCarousel = ({ images }) => {
 
       {lightboxOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+          className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
           onClick={() => setLightboxOpen(false)}
         >
           <button
             onClick={() => setLightboxOpen(false)}
-            className="absolute top-4 right-4 bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+            className="absolute top-4 right-4 bg-black hover:bg-black/80 p-2 rounded-full transition-colors"
           >
             <X className="w-6 h-6 text-white" />
           </button>
+
           <button
             onClick={(e) => {
               e.stopPropagation();
               prevLightbox();
             }}
-            className="absolute left-4 bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors"
+            className="absolute left-4 bg-black hover:bg-black/80 p-3 rounded-full transition-colors"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
-          <div
-            className="max-w-5xl max-h-[90vh]"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img
-              src={images[lightboxIndex]}
-              alt={`Full view ${lightboxIndex + 1}`}
-              className="w-full h-full object-contain rounded-lg"
-            />
-          </div>
+
           <button
             onClick={(e) => {
               e.stopPropagation();
               nextLightbox();
             }}
-            className="absolute right-4 bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors"
+            className="absolute right-4 bg-black hover:bg-black/80 p-3 rounded-full transition-colors"
           >
             <ChevronRight className="w-6 h-6 text-white" />
           </button>
+
+          <div
+            className="flex items-center justify-center w-full h-full max-w-[90vw] max-h-[80vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={images[lightboxIndex]}
+              alt={`Full view ${lightboxIndex + 1}`}
+              className="max-w-[85vw] max-h-[75vh] w-auto h-auto object-contain rounded-lg"
+            />
+          </div>
+
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm bg-black/50 px-3 py-1 rounded-full">
             {lightboxIndex + 1} / {images.length}
           </div>
