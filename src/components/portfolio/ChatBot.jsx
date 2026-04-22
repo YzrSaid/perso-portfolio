@@ -42,7 +42,7 @@ const ChatBot = () => {
             Authorization: `Bearer ${API_KEY}`,
           },
           body: JSON.stringify({
-            model: "stepfun/step-3.5-flash:free",
+            model: "z-ai/glm-4.5-air:free",
             messages: [
               {
                 role: "system",
@@ -91,7 +91,7 @@ const ChatBot = () => {
               { role: "user", content: input },
             ],
           }),
-        }
+        },
       );
 
       const data = await response.json();
@@ -103,7 +103,10 @@ const ChatBot = () => {
       console.error("Chat Error:", error);
       setMessages((prev) => [
         ...prev,
-        { role: "bot", text: "Meow... error connecting to the server. *stares at wall*" },
+        {
+          role: "bot",
+          text: "Meow... error connecting to the server. *stares at wall*",
+        },
       ]);
     } finally {
       setIsLoading(false);
