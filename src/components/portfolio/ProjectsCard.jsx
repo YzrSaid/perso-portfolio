@@ -64,6 +64,14 @@ import CrimsonMapWholePage from "../../assets/crimson_map/crimson_web_whole_page
 import CrimsonMapAdmin_1 from "../../assets/crimson_map/crimson_admin_1.webp";
 import CrimsonMapAdmin_2 from "../../assets/crimson_map/crimson_admin_2.webp";
 
+//remanence images
+import remanence_1 from "../../assets/remanence/1.png";
+import remanence_2 from "../../assets/remanence/2.png";
+import remanence_3 from "../../assets/remanence/3.png";
+import remanence_4 from "../../assets/remanence/4.png";
+import remanence_5 from "../../assets/remanence/5.png";
+import remanence_6 from "../../assets/remanence/6.png";
+
 // Libris images
 import LibrisLogo1 from "../../assets/libris/libris_logo.webp";
 import LibrisLogo2 from "../../assets/libris/libris_long.webp";
@@ -90,6 +98,19 @@ const devProjects = [
     techStack: ["Flutter", "Dart", "Supabase", "SQLite", "Mobile App", "AI"],
     github: null,
     website: null,
+  },
+  {
+    title: "remanence",
+    desc: "A heartfelt gifting web app where you can create and send meaningful multi-media gifts to your loved ones.",
+    tags: ["Web App", "React.js"],
+    color: "text-rose-500",
+    bg: "bg-rose-500/10",
+    fullDesc:
+      "Remanence is a personal gifting platform where you can craft and send meaningful digital gifts to your loved ones. It supports multi-media gifts — letters, photos, and voice recordings all in one experience. Gifts can be locked behind dates, passcodes, or private links for a secure and personal reveal. Built with a privacy-first philosophy: no tracking, no ads, no AI training. Ever.",
+    role: "Solo Developer & Designer",
+    techStack: ["React.js", "Web App"],
+    github: null,
+    website: "https://remanence.vercel.app/",
   },
   {
     title: "PyQuest",
@@ -185,6 +206,19 @@ const designProjects = [
     desc: "Retro pixel-art UI design for a gamified interactive web blog documenting the CCS educational tour at WMSU. Features a fully custom game-inspired aesthetic built with React.js.",
     tags: ["Web", "React.js", "UI Design"],
     images: [pyq_1, pyq_2, pyq_3, pyq_4, pyq_5],
+  },
+  {
+    title: "remanence",
+    desc: "UI/UX design for Remanence, a heartfelt gifting web app. Features a warm, intimate aesthetic for creating and sending multi-media gifts — letters, photos, and voice recordings — to loved ones.",
+    tags: ["Web", "React.js", "UI Design"],
+    images: [
+      remanence_1,
+      remanence_2,
+      remanence_3,
+      remanence_4,
+      remanence_5,
+      remanence_6,
+    ],
   },
   {
     title: "Crimson Map Official",
