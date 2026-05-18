@@ -9,12 +9,20 @@ import Udemy_HtmlCss from "../../assets/udemy_cert.webp";
 import GDSC_ML_Kickoff from "../../assets/gdsc_intro_to_ml.webp";
 import GDSC_WMSU_Info from "../../assets/gdsc_info_session_wmsu.webp";
 import GDSC_Tuguegarao_Info from "../../assets/gdsc_info_session_tuguegarao.webp";
+import Nexzys from "../../assets/nexzys_cert.jpeg";
 
 const AchievementsCard = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const certsRef = useRef(null);
 
   const certifications = [
+    {
+      name: "Best OJT Performer Award",
+      org: "Vintazk Outsourcing (Neszys Intelligence)",
+      type: "Internship Achievement",
+      color: "text-amber-500",
+      image: Nexzys,
+    },
     {
       name: "Ethical Hacking: Understanding the Thin Line",
       org: "DICT (Department of Information and Communications Technology)",

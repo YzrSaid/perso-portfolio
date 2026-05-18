@@ -18,6 +18,13 @@ import WMSUPalaro_3 from "../../assets/wmsu_palaro/3.webp";
 import WMSUPalaro_4 from "../../assets/wmsu_palaro/4.webp";
 import WMSUPalaro_5 from "../../assets/wmsu_palaro/4.webp";
 
+// PYQUEST images
+import pyq_1 from "../../assets/pyquest/2.png";
+import pyq_2 from "../../assets/pyquest/3.png";
+import pyq_3 from "../../assets/pyquest/4.png";
+import pyq_4 from "../../assets/pyquest/5.png";
+import pyq_5 from "../../assets/pyquest/pyquest pubmat.png";
+
 // M.A. Yazar images
 import MAYazar_logo from "../../assets/ma_yazar/ma_yazar_logo.webp";
 import MAYazar_1 from "../../assets/ma_yazar/ma_yazar_1.webp";
@@ -71,6 +78,32 @@ import StudyaWholePage from "../../assets/studya/studya_whole_page.webp";
 import StudyaLanding from "../../assets/studya/studya_landing_1.webp";
 
 const devProjects = [
+  {
+    title: "INVENTA",
+    desc: "AI-Driven POS & Inventory Management System for Philippine coffee shops, built during internship at Vintazk Outsourcing under Neszys Intelligence.",
+    tags: ["Mobile App", "Flutter", "AI", "Internship"],
+    color: "text-amber-500",
+    bg: "bg-amber-500/10",
+    fullDesc:
+      "Inventa is a complete AI-powered Point-of-Sale and Inventory Management System built specifically for Philippine coffee shops and food businesses. It combines traditional POS functionality with AI-driven insights — sales forecasting, demand risk analysis, and stock expiry warnings. Key features include a Smart POS with Real-Time Stock Awareness, AI-Powered Insights, Employee & Shift Management, Cloud Sync with Offline-First Design, and Multi-Store Architecture. Developed during my internship at Vintazk Outsourcing under Neszys Intelligence.",
+    role: "Intern Developer (Vintazk Outsourcing / Neszys Intelligence)",
+    techStack: ["Flutter", "Dart", "Supabase", "SQLite", "Mobile App", "AI"],
+    github: null,
+    website: null,
+  },
+  {
+    title: "PyQuest",
+    desc: "A gamified retro-style interactive web blog documenting the educational tour of CCS students from WMSU, Zamboanga City.",
+    tags: ["Web App", "React.js", "Blog"],
+    color: "text-yellow-500",
+    bg: "bg-yellow-500/10",
+    fullDesc:
+      "PyQuest is an interactive retro-style blog that documents the educational tour of IT students from the College of Computing Studies (CCS) at Western Mindanao State University (WMSU), Zamboanga City, Philippines. The project showcases my web development skills through a gamified, pixel-art-inspired experience built with React.js.",
+    role: "Solo Developer & Designer",
+    techStack: ["React.js", "Web App"],
+    github: null,
+    website: "https://pyquest-blog.vercel.app/",
+  },
   {
     title: "Crimson Map",
     desc: "An Augmented Reality (AR) campus navigation system for WMSU, developed as our Capstone Project.",
@@ -147,6 +180,12 @@ const devProjects = [
 ];
 
 const designProjects = [
+  {
+    title: "PyQuest",
+    desc: "Retro pixel-art UI design for a gamified interactive web blog documenting the CCS educational tour at WMSU. Features a fully custom game-inspired aesthetic built with React.js.",
+    tags: ["Web", "React.js", "UI Design"],
+    images: [pyq_1, pyq_2, pyq_3, pyq_4, pyq_5],
+  },
   {
     title: "Crimson Map Official",
     desc: "Logo, Web, and Mobile App Design of Crimson Map, an Augmented Reality (AR) Campus Navigation System for Western Mindanao State University.",
