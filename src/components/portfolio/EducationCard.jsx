@@ -10,7 +10,8 @@ const EducationCard = () => {
       id: 1,
       degree: "BS Information Technology",
       school: "Western Mindanao State University",
-      year: "2022 - Present (4th Year)",
+      year: "2022 - Graduated",
+      details: ["Cum Laude", "CSC Eligibility"],
     },
     {
       id: 2,
@@ -80,6 +81,23 @@ const EducationCard = () => {
               >
                 {edu.year}
               </span>
+              {edu.details && edu.details.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {edu.details.map((detail, detailIndex) => (
+                    <span
+                      key={detailIndex}
+                      className={`text-[10px] inline-block px-2 py-0.5 rounded-full font-medium border transition-colors duration-300
+                      ${
+                        hoveredEdu === index
+                          ? "bg-secondary/20 text-foreground border-border"
+                          : "bg-muted/40 text-muted-foreground border-border"
+                      }`}
+                    >
+                      {detail}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}

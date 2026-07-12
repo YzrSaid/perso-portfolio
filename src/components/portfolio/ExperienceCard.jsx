@@ -9,10 +9,26 @@ const ExperienceCard = () => {
   const experienceList = [
     {
       id: 1,
+      role: "UI/UX Developer",
+      company: "Vintazk Outsourcing under Nexzys Intelligence",
+      type: "Full-time",
+      year: "July 2026 - Present",
+      fullDesc:
+        "Working as a UI/UX Developer responsible for both interface design and frontend development, translating design ideas into functional and polished user experiences while collaborating closely with the team.",
+      tags: ["UI/UX", "Frontend", "Development"],
+      projects: [
+        {
+          name: "Product Interface and Frontend Work",
+          desc: "Designing and coding user interfaces, refining the experience, and implementing frontend features for active projects.",
+        },
+      ],
+    },
+    {
+      id: 2,
       role: "Intern Developer & UI/UX Designer",
-      company: "Vintazk Outsourcing",
+      company: "Vintazk Outsourcing under Nexzys Intelligence",
       type: "OJT / Internship",
-      year: "February 2026 - Present",
+      year: "February 2026 - May 2026",
       fullDesc:
         "Serving as both a developer and UI/UX designer for the assigned project, contributing to interface design, frontend implementation, and collaborative development tasks with the team.",
       tags: ["Frontend", "UI/UX", "Development"],
@@ -24,7 +40,7 @@ const ExperienceCard = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       role: "Freelance Web Developer & Social Media Manager",
       company: "RPS Real Estate",
       type: "Freelance / Part-time",
@@ -79,7 +95,7 @@ const ExperienceCard = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.4, delay: index * 0.08 }}
-                className="relative pl-6 py-2 cursor-default"
+                className="relative pl-4 py-2 cursor-default"
               >
                 <div className="absolute -left-[5px] top-3.5 h-2.5 w-2.5 rounded-full bg-muted-foreground/20 ring-4 ring-card z-10">
                   {hoveredExp === index && (
