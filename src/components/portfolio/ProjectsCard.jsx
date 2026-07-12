@@ -100,6 +100,26 @@ const devProjects = [
     website: null,
   },
   {
+    title: "Crimson Map",
+    desc: "An Augmented Reality (AR) campus navigation system for WMSU, developed as our Capstone Project.",
+    tags: ["Unity", "Augmented Reality", "Mapbox", "Mobile App"],
+    color: "text-blue-500",
+    bg: "bg-blue-500/10",
+    fullDesc:
+      "Crimson Map is an Augmented Reality (AR) campus navigation system developed as our Capstone Project for Western Mindanao State University (WMSU). It combines GPS-based outdoor navigation with QR code-based indoor positioning, helping students and visitors navigate the campus with ease. I was responsible for the core Unity development, AR Foundation integration, Mapbox 3D mapping, Firebase data storage, and the overall mobile app architecture.",
+    role: "Lead Developer & UI/UX Designer",
+    techStack: [
+      "Unity",
+      "C#",
+      "AR Foundation",
+      "Mapbox",
+      "Firebase",
+      "Mobile App",
+    ],
+    github: "https://github.com/YzrSaid/2025_CP-Crimson-Map",
+    website: "https://wmsucrimsonmapadmin.vercel.app/",
+  },
+  {
     title: "remanence",
     desc: "A heartfelt gifting web app where you can create and send meaningful multi-media gifts to your loved ones.",
     tags: ["Web App", "React.js"],
@@ -124,26 +144,6 @@ const devProjects = [
     techStack: ["React.js", "Web App"],
     github: null,
     website: "https://pyquest-blog.vercel.app/",
-  },
-  {
-    title: "Crimson Map",
-    desc: "An Augmented Reality (AR) campus navigation system for WMSU, developed as our Capstone Project.",
-    tags: ["Unity", "Augmented Reality", "Mapbox", "Mobile App"],
-    color: "text-blue-500",
-    bg: "bg-blue-500/10",
-    fullDesc:
-      "Crimson Map is an Augmented Reality (AR) campus navigation system developed as our Capstone Project for Western Mindanao State University (WMSU). It combines GPS-based outdoor navigation with QR code-based indoor positioning, helping students and visitors navigate the campus with ease. I was responsible for the core Unity development, AR Foundation integration, Mapbox 3D mapping, Firebase data storage, and the overall mobile app architecture.",
-    role: "Lead Developer & UI/UX Designer",
-    techStack: [
-      "Unity",
-      "C#",
-      "AR Foundation",
-      "Mapbox",
-      "Firebase",
-      "Mobile App",
-    ],
-    github: "https://github.com/YzrSaid/2025_CP-Crimson-Map",
-    website: "https://wmsucrimsonmapadmin.vercel.app/",
   },
   {
     title: "studya.io",

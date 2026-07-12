@@ -6,6 +6,9 @@ import {
   SiFirebase,
   SiSupabase,
   SiVercel,
+  SiDocker,
+  SiLaravel,
+  SiPhp,
 } from "react-icons/si";
 import { Code2 } from "lucide-react";
 import { FaFlutter } from "react-icons/fa6";
@@ -56,6 +59,24 @@ const technologies = [
   {
     icon: SiVercel,
     name: "Vercel",
+    color: "text-foreground",
+    bg: "border-gray-300",
+  },
+  {
+    icon: SiLaravel,
+    name: "Laravel",
+    color: "text-foreground",
+    bg: "border-gray-300",
+  },
+  {
+    icon: SiPhp,
+    name: "PHP",
+    color: "text-foreground",
+    bg: "border-gray-300",
+  },
+  {
+    icon: SiDocker,
+    name: "Docker",
     color: "text-foreground",
     bg: "border-gray-300",
   },
