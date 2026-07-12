@@ -13,9 +13,13 @@ const AboutMe = () => {
       </div>
 
       <p className="text-muted-foreground leading-relaxed text-[15px] flex-grow text-justify">
-        Hi!👋🏻 I am Aldrin, a Bachelor of Science in Information Technology (BSIT) student at Western Mindanao State University, with a strong interest in mobile application development and UI/UX design.
-
-        I enjoy building applications from concept to execution, especially in mobile development where I often handle the entire process, from interface design to functionality. For web projects, I focus on front-end development, creating clean, intuitive, and user-friendly experiences.
+        Hi! 👋 I'm Aldrin, a Mobile and Web Developer with a passion for UI/UX
+        design. Currently, I work as a UI/UX Developer, where I design intuitive
+        user experiences and translate them into functional, user-friendly
+        interfaces through code. I enjoy bridging the gap between design and
+        development, ensuring that every product is both visually appealing and
+        technically well-crafted. My experience spans UI/UX design, front-end
+        web development, and mobile application development.
       </p>
     </div>
   );
